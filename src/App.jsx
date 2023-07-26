@@ -1,14 +1,22 @@
 import "./index.css";
-import Heder from "./components/Heder";
-import Balance from "./components/Balance";
-import IncomeExpense from "./components/IncomeExpense";
+import { Header } from "./components/Header";
+import { Balance } from "./components/Balance";
+import { IncomeExpenses } from "./components/IncomeExpenses";
+import { TransactionList } from "./components/TransactionList";
+import { AddTransaction } from "./components/AddTransaction";
+import { GlobalProvider } from "./context/GlobalState";
+
 function App() {
   return (
-    <div>
-      <Heder title="Expense Tracker" />
-      <Balance />
-      <IncomeExpense />
-    </div>
+    <GlobalProvider>
+      <Header title="Expense Tracker" />
+      <div className="container">
+        <Balance />
+        <IncomeExpenses />
+        <TransactionList />
+        <AddTransaction />
+      </div>
+    </GlobalProvider>
   );
 }
 

@@ -1,10 +1,10 @@
-const Balance = () => {
+// import React, { useContext } from 'react';
+
+export const Balance = () => {
   return (
-    <div className="Balance">
-      <h3>YOUR BALANCE</h3>
-      <h2 className="amount">400 lei</h2>
-    </div>
+    <>
+      <h4>Your Balance</h4>
+      <h1>400 lei</h1>
+    </>
   );
 };
-
-export default Balance;
