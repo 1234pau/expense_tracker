@@ -5,6 +5,8 @@ import { IncomeExpenses } from "./components/IncomeExpenses";
 import { TransactionList } from "./components/TransactionList";
 import { AddTransaction } from "./components/AddTransaction";
 import { GlobalProvider } from "./context/GlobalState";
+// import { GlobalContext } from "./context/GlobalState";
+// import { useContext } from "react";
 
 function App() {
   return (
