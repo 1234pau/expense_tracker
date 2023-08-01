@@ -4,6 +4,7 @@ import { useContext } from "react";
 
 export const TransactionList = () => {
   const { transactions } = useContext(GlobalContext);
+
   return (
     <>
       <h3>History</h3>
